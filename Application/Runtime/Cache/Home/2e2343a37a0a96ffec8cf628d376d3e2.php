@@ -53,10 +53,10 @@
   <?php if(is_array($course_info)): $i = 0; $__LIST__ = $course_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$course_info): $mod = ($i % 2 );++$i;?><tr>
     <td><?php echo ($course_info["course_id"]); ?></td>
     <td><?php echo ($course_info["name"]); ?></td>
-    <td><?php echo ($course_info["teacher"]); ?></td>
+    <td><?php echo ($course_info["username"]); ?></td>
     <td><?php echo ($course_info["selectedman"]); ?>/<?php echo ($course_info["capacity"]); ?></td>
     <td><?php echo ($course_info["classroom"]); ?></td>
-    <td><?php echo ($course_info["time"]); ?>节</td>
+    <td><a href="/eduadmin/index.php/Home/Index/stulistclasstime/id/<?php echo ($course_info["course_id"]); ?>">显示上课时间</td>
    <td class="edit"><a href="/eduadmin/index.php/Home/Index/selectCourse/id/<?php echo ($course_info["course_id"]); ?>">选课</td>
   </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>选课系统--教师管理中心</title>
-<link href="/thinkphp/Public/css/index.css" rel="stylesheet" type="text/css" />
+<link href="/eduadmin/Public/css/index.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
      form#pass input{
           margin:0px;
@@ -54,7 +54,7 @@
 </head>
 <body id="page">
 <h2>修改密码</h2>
-<form action="/thinkphp/index.php/Home/Index/updatePassword" method="post" id="pass" name="myform" onsubmit="return check();">
+<form action="/eduadmin/index.php/Home/Index/updatePassword" method="post" id="pass" name="myform" onsubmit="return check();">
 旧密码：&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="oldpass"><br>
 新密码：&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="newpass"><br>
 确认密码：&nbsp;&nbsp;<input type="password" name="repeatpass"><br>

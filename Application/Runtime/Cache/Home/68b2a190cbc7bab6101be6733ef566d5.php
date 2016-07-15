@@ -53,10 +53,8 @@
     <td><?php echo ($course_info["name"]); ?></td>
     <td class="total"><?php echo ($course_info["capacity"]); ?></td>
     <td><?php echo ($course_info["classroom"]); ?></td>
-    <td><a href="/eduadmin/index.php/Home/Index/listclasstime/id/<?php echo ($course_info["course_id"]); ?>">显示</a>/      <a href="/eduadmin/index.php/Home/Index/publishclasstime/id/<?php echo ($course_info["course_id"]); ?>">添加</a></td>
-   <td class="edit">
-    <a href="/eduadmin/index.php/Home/Index/editCourse/id/<?php echo ($course_info["course_id"]); ?>">编辑</a>/
-    <a href="/eduadmin/index.php/Home/Index/deleteCourse/id/<?php echo ($course_info["course_id"]); ?>">删除</td>
+    <td><?php echo ($course_info["time"]); ?>节</td>
+   <td class="edit"><a href="/eduadmin/index.php/Home/Index/editCourse/id/<?php echo ($course_info["course_id"]); ?>">编辑</a>/<a href="/eduadmin/index.php/Home/Index/deleteCourse/id/<?php echo ($course_info["course_id"]); ?>">删除</td>
   </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 <br>

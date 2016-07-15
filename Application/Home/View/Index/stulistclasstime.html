@@ -7,7 +7,7 @@
 <link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
      table{
-        width:980px;
+        width:902px;
         margin:0px;
         padding:0px;
      }
@@ -19,8 +19,11 @@
        line-height:20px;
        text-align:center;
      }
-     td.credit{
-       width:50px;
+	 td.id{
+       width:70px;
+     }
+	 td.total{
+       width:60px;
      }
      td.edit{
        width:102px;
@@ -38,24 +41,19 @@
 </style>
 </head>
 <body id="page">
-<h2>已选课题</h2>
+<h2>管理课程</h2>
 <table>
-  <tr><th>课题编号</th><th>课题名</th><th>指导教师</th><th>上课教室</th><th>上课时间</th><th>操作</th></tr>
-  <volist id="course_info" name="course_info">
+  <tr><th>课程编号</th>
+ <th>上课日期</th><th>开始时间</th><th>结束时间</th></tr>
+  <volist id="time_info" name="time_info">
   <tr>
-    <td>{<$course_info.course_id>}</td>
-    <td>{<$course_info.name>}</td>
-    <td>{<$course_info.username>}</td>
-    <td>{<$course_info.classroom>}</td>
-    <td><a href="__URL__/stulistclasstime/id/{<$course_info.course_id>}">显示上课时间</a></td>
-   <td class="edit"><a href="__URL__/quitCourse/id/{<$course_info.course_id>}">退课</td>
+    <td class="id">{<$time_info.course_id>}</td>
+    <td class="total">{<$time_info.date>}</td>
+    <td class="total">{<$time_info.starttime>}</td>
+    <td class="total">{<$time_info.endtime>}</td>
   </tr>
   </volist>
 </table>
 <br>
-<gt name="export" value="0">
-<else/>还没有已选的课程
-</gt>
 </body>
 </html>
-

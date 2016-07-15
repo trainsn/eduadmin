@@ -13,7 +13,6 @@
 <div id="userInfo">你好，学生<?php echo ($username); ?>，今天是<?php echo ($date); ?></div>
 <ul id="globalNav">
 	<li><a href="javascript:ms=confirm('确定退出');ms?location.href='/eduadmin/index.php/Home/Index/admin_exit':history.go(0)" target="_self">退出</a></li>
-	<li><a href="/eduadmin/index.php/Home/Index/editPassword" target="frameBord">修改密码</a></li>
 	<li><a href="/eduadmin/index.php/Home/Index/selectedCourse" target="frameBord">已选课程</a></li>
 	<li><a href="/eduadmin/index.php/Home/Index/listCourse" target="frameBord">选择课程</a></li>
 	<li><a href="/eduadmin/index.php/Home/Index/publishCourse" target="frameBord">发布课程</a></li>

@@ -89,22 +89,21 @@ class IndexController extends Controller {
     	$course=M("Course");
     	$count=$course->count();
     	$listRow=10;
-    	//$Page = new \THINK\PAGE($count,$listRow);//实例化分页类，传入总记录数和每页显示的数目
-    	//$show =$Page->show(); //分页显示输出
-    	//进行分页数据查询 注意limit方法的参数要使用Page类的属性
-    	$course_info=$course->order('course_id')->select();
+
+      $course_info=$course->join('info_User on info_course.teacher = info_user.user_id')->select();
+
     	//$displaypage=0;
     	//if(count($course_info)>0) $displaypage=1;
 
     	//$this->assign("displaypage",$displaypage);
     	//$this->assign("page",$show);
     	//$this->assign("pagestyle","green-black");
-    	$this->assign("course_info",$course_info);
+      $this->assign("course_info",$course_info);
     	$this->display();
     }
 
    	function selectCourse(){	//选课操作
-      echo "</br></br></br></br>";
+      //echo "</br></br></br></br>";
    		$this->check_logined();
    		session_start();
    		$id=$_GET['id'];
@@ -181,17 +180,9 @@ class IndexController extends Controller {
         $this->check_logined();
         session_start();
         $selected=M("selected");
-        $course_info=$selected->where("user_id=$_SESSION[user_id]")->join('info_Course on info_selected.course_id = info_course.course_id')->select();
-        //echo count($selected_info);
-       /* for ($i=0;$i<count($selected_info);$i++)
-        {
-            //echo $i;
-            $course_id[$i]=$selected_info[$i]['course_id'];
-        }
-        $course=M("Course")
-        $course->join('selected ON selected.course_id = Course.user_id')->;
-        $condition['$course_id']=array('in',$course_id);
-        $course_info=$course->where($condition)->select();*/
+
+        $course_info=$selected->where("info_user.user_id=".$_SESSION["user_id"])->join('info_Course on info_selected.course_id = info_course.course_id')->join('info_User on info_course.teacher = info_user.user_id')->select();
+        //dump($course_info);
         $export=0;
         if (count($course_info)>0)
           $export=1;
@@ -214,29 +205,6 @@ class IndexController extends Controller {
         $this->success("退课成功");
     }
 
-    function editPassword() //修改学生密码
-    {
-        $this->check_logined();
-        $this->display();
-    }
-    
-    function updatePassword() //更新学生密码操作
-    {
-        $this->check_logined();
-        session_start();
-        $user=M("user");
-        $oldpass=($_POST['oldpass']);
-        $condition['password']=$oldpass;
-        if (!$userInfo=$user->where($condition)->select())
-          $this->error("旧密码错误");
-        $newpass=($_POST['newpass']);
-        $condition['user_id']=$_SESSION['user_id'];
-        $data['password']=$newpass;
-        if (!$user->where($condition)->save($data))
-          $this->error("修改失败");
-        $this->success("修改成功");
-    }
-
     function publishCourse()
     {
       $this->check_logined();//发布课程模块
@@ -248,10 +216,15 @@ class IndexController extends Controller {
       $this->check_logined();
       session_start();
       $course=M("course");
+      $user=M("user");
+      dump($course->create());
       if (!$data=$course->create())
         $this->error();
-      $data['teacher']=$_SESSION['user_id'];
-      //$condition['teacher']=$_SESSION['user_id'];
+      $data['teacherid']=$_SESSION['user_id'];
+      $condition['user_id']=$_SESSION['user_id'];
+      $teacher=$user->where($condition)->find();
+      dump($teacher);
+      $data['teacher']=$teacher['username'];
       if (!$course->add($data))
         $this->error("发布失败");
       $url=U("publishCourse");
@@ -264,7 +237,7 @@ class IndexController extends Controller {
       $this->check_logined();
       session_start();
       $course=M("course");
-      $condition['teacher']=$_SESSION['user_id'];
+      $condition['teacherid']=$_SESSION['user_id'];
       $course_info=$course->where($condition)->select();
       $displaypage=0;
       if (count($course_info)>0)//如果有课程信息才显示分页
@@ -277,9 +250,8 @@ class IndexController extends Controller {
     function deleteCourse()//删除课程信息
     {
         $this->check_logined();
-        echo "</br></br></br></br></br>";
+        //echo "</br></br></br></br></br>";
         $id=$_GET['id'];
-        dump($id);
         $course=M("course");
 
         if (!$course->delete($id))
@@ -290,8 +262,157 @@ class IndexController extends Controller {
         $this->success("删除成功");        
     }
 
-    function editCourse()
+    function editcourse() //编辑课程信息
     {
-      
+      $this->check_logined();
+      $id=$_GET['id'];
+      $course=M("course");
+      $course_info=$course->find($id);
+      $this->assign("course_info",$course_info);
+      $this->display(); 
     }
+
+    function updatecourse() 
+    {
+      echo "</br></br></br></br>";
+      $this->check_logined();
+      session_start();
+      $course=M("course");
+      $user=M("user");
+      //dump($_GET['id']);
+      if (!$data=$course->create())
+        $this->error();
+      $data['teacherid']=$_SESSION['user_id'];
+      //dump($data);
+      $course->save($data);
+      $this->success("修改成功");      
+    }
+
+    function listclasstime()
+    {
+      //echo "</br></br></br></br>";
+      $this->check_logined();
+      session_start();
+      $classtime=M("classtime");
+      $condition["course_id"]=$_GET["id"];
+      $time_info=$classtime->where($condition)->select();
+      for ($i=0;$i<count($time_info);$i++)
+      {
+        $time_info[$i]["date"]=date("Y-m-d",$time_info[$i]["endtime"]);
+        $time_info[$i]["starttime"]=date("h:i:s",$time_info[$i]["starttime"]);
+        $time_info[$i]["endtime"]=date("h:i:s",$time_info[$i]["endtime"]);        
+      }
+      
+      $this->assign("time_info",$time_info);
+      $this->display();
+    }
+
+    function deleteclasstime()
+    {
+        $this->check_logined();
+        //echo "</br></br></br></br></br>";
+        $id=$_GET['id'];
+        $date=$_GET['date'];
+        $starttime=$_GET['starttime'];
+        $starttime=strtotime($starttime.' '.$date);
+        $condition['course_id']=$id;
+        $condition['startTime']=$starttime;
+        
+        $time_info=M("classtime");
+
+        if (!$time_info->where($condition)->delete())
+          $this->error("删除失败");
+        
+        $url=U("manageCourse");
+        $this->assign("jumpUrl",$url);
+        $this->success("删除成功");   
+    }
+
+    function editclasstime() //编辑课程信息
+    {
+      $this->check_logined();
+      $time_info['course_id']=$_GET['id'];
+      $time_info['date']=$_GET['date'];
+      $time_info['starttime']=$_GET['starttime'];
+      $time_info['endtime']=$_GET['endtime'];
+
+      $this->assign("time_info",$time_info);
+      $this->display(); 
+    }
+
+    function updateclasstime()
+    {
+        $this->check_logined();
+        echo "</br></br></br></br></br>";
+        $date=$_POST['date'];
+        $starttime=$_POST['starttime'];
+        $endtime=$_POST['endtime'];
+        $data['starttime']=strtotime($starttime.' '.$date);
+        $data['endtime']=strtotime($endtime.' '.$date);
+
+        $date=$_GET['date'];
+        $starttime=$_GET['starttime'];
+        $condition['course_id']=$_GET['id'];
+        $condition['starttime']=strtotime($starttime.' '.$date);
+        
+        //dump($data);
+        //dump($condition);
+        $time_info=M("classtime");
+
+        $Model = new \Think\Model();
+        $Model->execute('update info_classtime set starttime='.$data['starttime'].',endtime='.$data['endtime'].' where course_id='.$condition['course_id'].' and starttime='.$condition['starttime'].';');
+            
+        $url=U('manageCourse');
+        $this->assign("jumpUrl",$url);
+        $this->success("更新成功");   
+    }
+
+    function publishclasstime()
+    {
+      $this->check_logined();
+      $course_id=$_GET['id'];
+      $this->assign('course_id',$course_id);
+      $this->display();
+    }
+
+    function addclasstime()
+    {
+        $this->check_logined();
+        echo "</br></br></br></br></br>";
+        $data['course_id']=$_GET['id'];
+        $date=$_POST['date'];
+        $starttime=$_POST['starttime'];
+        $endtime=$_POST['endtime'];
+        $data['startTime']=strtotime($starttime.' '.$date);
+        $data['endTime']=strtotime($endtime.' '.$date);
+        dump($data);
+
+        $classtime=M("classtime");
+        if (!$classtime->add($data))
+         $this->error("发布失败");
+        $url=U("manageCourse");
+        $this->assign("jumpUrl",$url);
+        $this->success("发布成功");  
+    } 
+
+    function stulistclasstime()
+    {
+      //echo "</br></br></br></br>";
+      $this->check_logined();
+      session_start();
+      $classtime=M("classtime");
+      $condition["course_id"]=$_GET["id"];
+      $time_info=$classtime->where($condition)->select();
+      for ($i=0;$i<count($time_info);$i++)
+      {
+        $time_info[$i]["date"]=date("Y-m-d",$time_info[$i]["endtime"]);
+        $time_info[$i]["starttime"]=date("h:i:s",$time_info[$i]["starttime"]);
+        $time_info[$i]["endtime"]=date("h:i:s",$time_info[$i]["endtime"]);        
+      }
+      
+      $this->assign("time_info",$time_info);
+      $this->display();
+    }
+
+
 }

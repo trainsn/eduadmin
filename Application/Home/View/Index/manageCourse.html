@@ -54,8 +54,10 @@
     <td>{<$course_info.name>}</td>
     <td class="total">{<$course_info.capacity>}</td>
     <td>{<$course_info.classroom>}</td>
-    <td>{<$course_info.time>}节</td>
-   <td class="edit"><a href="__URL__/editCourse/id/{<$course_info.course_id>}">编辑</a>/<a href="__URL__/deleteCourse/id/{<$course_info.course_id>}">删除</td>
+    <td><a href="__URL__/listclasstime/id/{<$course_info.course_id>}">显示</a>/      <a href="__URL__/publishclasstime/id/{<$course_info.course_id>}">添加</a></td>
+   <td class="edit">
+    <a href="__URL__/editCourse/id/{<$course_info.course_id>}">编辑</a>/
+    <a href="__URL__/deleteCourse/id/{<$course_info.course_id>}">删除</td>
   </tr>
   </volist>
 </table>

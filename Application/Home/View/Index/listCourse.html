@@ -54,10 +54,10 @@
   <tr>
     <td>{<$course_info.course_id>}</td>
     <td>{<$course_info.name>}</td>
-    <td>{<$course_info.teacher>}</td>
+    <td>{<$course_info.username>}</td>
     <td>{<$course_info.selectedman>}/{<$course_info.capacity>}</td>
     <td>{<$course_info.classroom>}</td>
-    <td>{<$course_info.time>}节</td>
+    <td><a href="__URL__/stulistclasstime/id/{<$course_info.course_id>}">显示上课时间</td>
    <td class="edit"><a href="__URL__/selectCourse/id/{<$course_info.course_id>}">选课</td>
   </tr>
   </volist>
