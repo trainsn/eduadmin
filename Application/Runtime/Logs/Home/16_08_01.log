@@ -1,0 +1,1550 @@
+[ 2016-08-01T10:30:28+08:00 ] ::1 /eduadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000815s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008261s ]
+
+[ 2016-08-01T10:30:28+08:00 ] ::1 /eduadmin/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000652s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005858s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001432s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004022s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005965s ]
+
+[ 2016-08-01T10:30:53+08:00 ] ::1 /eduadmin/index.php/Home/Index/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010780s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 0 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001927s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005580s ]
+
+[ 2016-08-01T10:31:06+08:00 ] ::1 /eduadmin/index.php/Home/Index/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000944s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030256s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 0 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002898s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005330s ]
+
+[ 2016-08-01T10:32:53+08:00 ] ::1 /eduadmin/index.php/Home/Index/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000474s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011959s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.013687s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008395s ]
+
+[ 2016-08-01T10:32:54+08:00 ] ::1 /eduadmin/index.php/Home/Index/student.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000863s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006466s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 71 行.
+NOTIC: [8] Undefined variable: conditon C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 74 行.
+SQL: SELECT * FROM `info_user` LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003761s ]
+NOTIC: [8] Undefined variable: date C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\81ff9fdd127e4f55be5a6c725b998cff.php 第 13 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005621s ]
+
+[ 2016-08-01T10:32:55+08:00 ] ::1 /eduadmin/index.php/Home/Index/student_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000616s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017417s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002951s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005877s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006218s ]
+
+[ 2016-08-01T10:32:58+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000475s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005896s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 237 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006979s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007272s ]
+
+[ 2016-08-01T10:33:01+08:00 ] ::1 /eduadmin/index.php/Home/Index/publishCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006087s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005554s ]
+
+[ 2016-08-01T10:33:02+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000597s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008088s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003496s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008381s ]
+
+[ 2016-08-01T10:33:05+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectedCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000612s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007208s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `info_selected` INNER JOIN info_Course on info_selected.course_id = info_course.course_id INNER JOIN info_User on info_course.teacher = info_user.user_id  WHERE ( info_user.user_id=1 )  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005590s ]
+
+[ 2016-08-01T10:33:08+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000630s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005888s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006703s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007650s ]
+
+[ 2016-08-01T10:33:13+08:00 ] ::1 /eduadmin/index.php/Home/Index/publishCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000482s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005790s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001467s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005674s ]
+
+[ 2016-08-01T10:33:15+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000590s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006728s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005055s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005617s ]
+
+[ 2016-08-01T10:33:17+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectCourse/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000589s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005955s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `info_selected` WHERE `user_id` = 1 AND `course_id` = 11 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `info_course` WHERE `course_id` = 11 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `info_classtime` WHERE ( course_id=11 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `info_selected` WHERE `user_id` = 1  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: course_id C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined index: selectedMan C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 165 行.
+SQL: INSERT INTO `info_selected` (`course_id`,`user_id`) VALUES ('11','1') [ RunTime:0.0638s ]
+SQL: UPDATE `info_course` SET `selectedMan`=selectedMan+1 WHERE ( course_id=11 ) [ RunTime:0.0708s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003790s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006070s ]
+
+[ 2016-08-01T10:33:18+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007995s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005450s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007793s ]
+
+[ 2016-08-01T10:33:20+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectedCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000561s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006086s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 180 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `info_selected` INNER JOIN info_Course on info_selected.course_id = info_course.course_id INNER JOIN info_User on info_course.teacher = info_user.user_id  WHERE ( info_user.user_id=1 )  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003540s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\9bd123ab2be3149877a49f9f63dc4ce5.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005567s ]
+
+[ 2016-08-01T10:33:22+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000477s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005926s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003510s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008627s ]
+
+[ 2016-08-01T10:34:50+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016413s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003503s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 56 行.
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040072s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\eduadmin\ThinkPHP\Common\functions.php:850) C:\xampp\htdocs\eduadmin\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\eduadmin\ThinkPHP\Common\functions.php:850) C:\xampp\htdocs\eduadmin\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\eduadmin\ThinkPHP\Common\functions.php:850) C:\xampp\htdocs\eduadmin\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014942s ]
+
+[ 2016-08-01T10:36:25+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006448s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003641s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005446s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\eduadmin\ThinkPHP\Common\functions.php:850) C:\xampp\htdocs\eduadmin\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\eduadmin\ThinkPHP\Common\functions.php:850) C:\xampp\htdocs\eduadmin\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\eduadmin\ThinkPHP\Common\functions.php:850) C:\xampp\htdocs\eduadmin\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006277s ]
+
+[ 2016-08-01T10:36:59+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000724s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006334s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001555s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005688s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005830s ]
+
+[ 2016-08-01T10:37:02+08:00 ] ::1 /eduadmin/index.php/Home/Index/stulistclasstime/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000466s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006028s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 396 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 11  [ RunTime:0.0013s ]
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 402 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 403 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 404 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003615s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016165s ]
+
+[ 2016-08-01T10:37:07+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000827s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005614s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001997s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004935s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005515s ]
+
+[ 2016-08-01T10:37:08+08:00 ] ::1 /eduadmin/index.php/Home/Index/stulistclasstime/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000467s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005771s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 396 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 12  [ RunTime:0.0013s ]
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 402 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 403 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 404 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001862s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006775s ]
+
+[ 2016-08-01T10:37:10+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000470s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005741s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003658s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006331s ]
+
+[ 2016-08-01T10:37:12+08:00 ] ::1 /eduadmin/index.php/Home/Index/stulistclasstime/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000568s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008242s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 396 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 13  [ RunTime:0.0019s ]
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 402 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 403 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 404 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005630s ]
+
+[ 2016-08-01T10:37:14+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000597s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005660s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003871s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006133s ]
+
+[ 2016-08-01T10:37:15+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectedCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000610s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006272s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `info_selected` INNER JOIN info_Course on info_selected.course_id = info_course.course_id INNER JOIN info_User on info_course.teacher = info_user.user_id  WHERE ( info_user.user_id=1 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007159s ]
+
+[ 2016-08-01T10:37:17+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005714s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003562s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006085s ]
+
+[ 2016-08-01T10:37:18+08:00 ] ::1 /eduadmin/index.php/Home/Index/publishCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000478s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007592s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001470s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006847s ]
+
+[ 2016-08-01T10:37:21+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000467s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007304s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 232 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003782s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005538s ]
+
+[ 2016-08-01T10:37:23+08:00 ] ::1 /eduadmin/index.php/Home/Index/listclasstime/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000527s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007304s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 289 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 11  [ RunTime:0.0013s ]
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 295 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 296 行.
+NOTIC: [8] A non well formed numeric value encountered C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 297 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003783s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005930s ]
+
+[ 2016-08-01T10:37:25+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000539s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006362s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 232 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004251s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006166s ]
+
+[ 2016-08-01T10:37:26+08:00 ] ::1 /eduadmin/index.php/Home/Index/publishclasstime/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005824s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003518s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005582s ]
+
+[ 2016-08-01T10:37:28+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000489s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006805s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 232 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001650s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006270s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005660s ]
+
+[ 2016-08-01T10:40:59+08:00 ] ::1 /eduadmin/index.php/Home/Index/listclasstime/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000585s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007021s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 289 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 11  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003682s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006042s ]
+
+[ 2016-08-01T10:41:02+08:00 ] ::1 /eduadmin/index.php/Home/Index/editclasstime/id/11/date/2016-09-01/starttime/08:00:00/endtime/10:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000466s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006370s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0367s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006692s ]
+
+[ 2016-08-01T10:41:04+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000461s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006321s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 232 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004342s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005552s ]
+
+[ 2016-08-01T10:41:05+08:00 ] ::1 /eduadmin/index.php/Home/Index/listclasstime/id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000492s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005753s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 289 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 12  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004558s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005901s ]
+
+[ 2016-08-01T10:41:07+08:00 ] ::1 /eduadmin/index.php/Home/Index/editclasstime/id/12/date/2016-09-01/starttime/09:00:00/endtime/11:00:00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000579s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006724s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003681s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005619s ]
+
+[ 2016-08-01T10:41:09+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000621s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005714s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 232 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001517s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004504s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006153s ]
+
+[ 2016-08-01T10:41:11+08:00 ] ::1 /eduadmin/index.php/Home/Index/listclasstime/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000506s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006830s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 289 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 13  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001797s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005756s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007362s ]
+
+[ 2016-08-01T10:41:32+08:00 ] ::1 /eduadmin/index.php/Home/Index/publishCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007645s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003938s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006841s ]
+
+[ 2016-08-01T10:41:33+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000481s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005533s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001465s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004016s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006843s ]
+
+[ 2016-08-01T10:41:35+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectedCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000463s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005538s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `info_selected` INNER JOIN info_Course on info_selected.course_id = info_course.course_id INNER JOIN info_User on info_course.teacher = info_user.user_id  WHERE ( info_user.user_id=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003667s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006949s ]
+
+[ 2016-08-01T10:41:37+08:00 ] ::1 /eduadmin/index.php/Home/Index/student_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000460s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005778s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003572s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006527s ]
+
+[ 2016-08-01T10:42:40+08:00 ] ::1 /eduadmin/index.php/Home/Index/publishCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000946s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010028s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003719s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008636s ]
+
+[ 2016-08-01T10:42:41+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000466s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008658s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 232 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004645s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009913s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006400s ]
+
+[ 2016-08-01T10:42:42+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009952s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005441s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007012s ]
+
+[ 2016-08-01T10:42:43+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectedCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000476s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007280s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `info_selected` INNER JOIN info_Course on info_selected.course_id = info_course.course_id INNER JOIN info_User on info_course.teacher = info_user.user_id  WHERE ( info_user.user_id=1 )  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005598s ]
+
+[ 2016-08-01T10:42:45+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000738s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008468s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003542s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007041s ]
+
+[ 2016-08-01T10:42:51+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectCourse/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008811s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `info_selected` WHERE `user_id` = 1 AND `course_id` = 11 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `info_course` WHERE `course_id` = 11 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `info_classtime` WHERE ( course_id=11 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `info_selected` WHERE `user_id` = 1  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: course_id C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 128 行.
+NOTIC: [8] Undefined index: selectedMan C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 160 行.
+SQL: INSERT INTO `info_selected` (`course_id`,`user_id`) VALUES ('11','1') [ RunTime:0.0650s ]
+SQL: UPDATE `info_course` SET `selectedMan`=selectedMan+1 WHERE ( course_id=11 ) [ RunTime:0.1688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007878s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011410s ]
+
+[ 2016-08-01T10:42:53+08:00 ] ::1 /eduadmin/index.php/Home/Index/listCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000967s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006287s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `info_course` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `info_course` INNER JOIN info_User on info_course.teacher = info_user.user_id   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003706s ]
+NOTIC: [8] Undefined variable: displaypage C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\2e2343a37a0a96ffec8cf628d376d3e2.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006046s ]
+
+[ 2016-08-01T10:42:54+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectedCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002404s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013130s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0369s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `info_selected` INNER JOIN info_Course on info_selected.course_id = info_course.course_id INNER JOIN info_User on info_course.teacher = info_user.user_id  WHERE ( info_user.user_id=1 )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005719s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011187s ]
+
+[ 2016-08-01T10:42:56+08:00 ] ::1 /eduadmin/index.php/Home/Index/stulistclasstime/id/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007768s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 396 行.
+SQL: SHOW COLUMNS FROM `info_classtime` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `info_classtime` WHERE `course_id` = 11  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002817s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006062s ]
+
+[ 2016-08-01T10:42:58+08:00 ] ::1 /eduadmin/index.php/Home/Index/selectedCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000564s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007474s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `info_selected` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `info_selected` INNER JOIN info_Course on info_selected.course_id = info_course.course_id INNER JOIN info_User on info_course.teacher = info_user.user_id  WHERE ( info_user.user_id=1 )  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003937s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007876s ]
+
+[ 2016-08-01T10:43:00+08:00 ] ::1 /eduadmin/index.php/Home/Index/publishCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000482s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008929s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001808s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008653s ]
+
+[ 2016-08-01T10:43:01+08:00 ] ::1 /eduadmin/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000578s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006138s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 232 行.
+SQL: SHOW COLUMNS FROM `info_course` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `info_course`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001826s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004824s ]
+NOTIC: [8] Undefined variable: pagestyle C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\eduadmin\Application\Runtime\Cache\Home\e4473b82a3667de8f7e075ab6aa01e72.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006349s ]
+
+[ 2016-08-01T10:43:03+08:00 ] ::1 /eduadmin/index.php/Home/Index/student_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010775s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\eduadmin\Application\Home\Controller\IndexController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `info_user` [ RunTime:0.0371s ]
+SQL: SELECT * FROM `info_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005920s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008732s ]
+
