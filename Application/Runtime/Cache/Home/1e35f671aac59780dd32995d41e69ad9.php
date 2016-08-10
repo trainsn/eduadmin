@@ -23,19 +23,7 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
     <li><a>你好，学生<?php echo ($username); ?>，今天是<?php echo ($date); ?></a></li>
-    <li><button type="submit" class="btn btn-primary" style="
-    margin-top: 6px;
-    margin-left: 6px;
-    margin-bottom: 6px;
-    margin-right: 6px;
-">回到首页</button></li>
-    <li><button type="submit" class="btn btn-danger" style="
-    margin-top: 6px;
-    margin-left: 6px;
-    margin-bottom: 6px;
-    margin-right: 6px;
-">退出登录</button>
-      </li>
+    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='/eduadmin/index.php/Home/Index/admin_exit':history.go(0)" target="_self">退出</a></li>
     </ul>
    </div>
    </nav>
@@ -53,7 +41,7 @@
    </div>
 
    <div class="col-sm-8 col-xs-7">
-	   <volist id="course_info" name="course_info">
+	   
 	   <table class=" table table-striped table-bordered">
 	   <tbody><tr><td style="text-align: center;">课程编号</td>
 	       <td style="text-align: center;">课程名称</td>
@@ -62,15 +50,16 @@
 	       <td style="text-align: center;">开课日期</td>
 	       <td style="text-align: center;">操作</td>
 	    </tr>
-	    <tr><td style="text-align: center;vertical-align: middle"><?php echo ($course_info["course_id"]); ?></td>
-	        <td style="text-align: center;vertical-align: middle"><$course_info.name></td>
-	        <td style="text-align: center;vertical-align: middle"><$course_info.classroom></td>
-	        <td style="text-align: center;vertical-align: middle"><$course_info.username></td>
-	        <td style="text-align: center;vertical-align: middle"><a href="#">显示上课时间</a></td>
+	    <?php if(is_array($course_info)): $i = 0; $__LIST__ = $course_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$course_info): $mod = ($i % 2 );++$i;?><tr><td style="text-align: center;vertical-align: middle"><?php echo ($course_info["course_id"]); ?></td>
+	        <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["name"]); ?></td>
+	        <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["classroom"]); ?></td>
+	        <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["username"]); ?></td>
+	        <td style="text-align: center;vertical-align: middle"><a href="/eduadmin/index.php/Home/Index/stulistclasstime/id/<?php echo ($course_info["course_id"]); ?>">显示上课时间</a></td>
 	        <td style="text-align: center;vertical-align: middle">
-	        <button type="submit" class="btn btn-danger">退课</button></td>
-	      </tr>
+	        <a href="/eduadmin/index.php/Home/Index/quitCourse/id/<?php echo ($course_info["course_id"]); ?>">退课</td>
+	      </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 	   </tbody></table>
+	    <?php if(($export) > "0"): else: ?>还没有已选的课程<?php endif; ?>
    </div>
  </div>
  </body>

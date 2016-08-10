@@ -23,12 +23,7 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
     <li><a>你好，学生<?php echo ($username); ?>，今天是<?php echo ($date); ?></a></li>
-    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='/eduadmin/index.php/Home/Index/admin_exit':history.go(0)" class="btn btn-danger" style="
-    margin-top: 6px;
-    margin-left: 6px;
-    margin-bottom: 6px;
-    margin-right: 6px;
-">退出登录</a></li>
+    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='/eduadmin/index.php/Home/Index/admin_exit':history.go(0)" target="_self">退出</a></li>
     </ul>
    </div>
    </nav>
@@ -51,7 +46,6 @@
          <td style="text-align: center;">课程名称</td>
          <td style="text-align: center;">开课地点</td>
          <td style="text-align: center;">指导老师</td>
-         <td style="text-align: center;">面向对象</td>
          <td style="text-align: center;">已选/容量</td>
          <td style="text-align: center;">开课日期</td>
          <td style="text-align: center;">操作</td>
@@ -60,7 +54,6 @@
           <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["name"]); ?></td>
           <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["classroom"]); ?></td>
           <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["username"]); ?></td>
-          <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["suita"]); ?></td>
           <td style="text-align: center;vertical-align: middle"><?php echo ($course_info["selectedman"]); ?>/<?php echo ($course_info["capacity"]); ?></td>
           <td style="text-align: center;vertical-align: middle"><a href="/eduadmin/index.php/Home/Index/stulistclasstime/id/<?php echo ($course_info["course_id"]); ?>">显示上课时间</a></td>
           <td style="text-align: center;vertical-align: middle">

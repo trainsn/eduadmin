@@ -1,71 +1,74 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>管理界面</title>
-<link href="__PUBLIC__/css/page.css" rel="stylesheet" type="text/css" />
-<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-     table{
-        width:902px;
-        margin:0px;
-        padding:0px;
-     }
-     td{
-       width:150px;
-       padding:0px;
-       margin:0px;
-       height:20px;
-       line-height:20px;
-       text-align:center;
-     }
-	 td.id{
-       width:70px;
-     }
-	 td.total{
-       width:60px;
-     }
-     td.credit{
-       width:50px;
-     }
-     td.edit{
-       width:102px;
-     }
-     a,a:visited{
-        text-decoration:none;
-     }
-     a:hover{
-        text-decoration:underline;
-     }
-     .green-black {
-	     padding-left:350px;
-	     text-align:left;
-}
-</style>
-</head>
-<body id="page">
-<h2>管理课程</h2>
-<table>
-  <tr><th>课程编号</th><th>课程名</th> 
- <th>总人数</th><th>上课教室</th><th>上课时间</th><th>操作</th></tr>
-  <volist id="course_info" name="course_info">
-  <tr>
-    <td class="id">{<$course_info.course_id>}</td>
-    <td>{<$course_info.name>}</td>
-    <td class="total">{<$course_info.capacity>}</td>
-    <td>{<$course_info.classroom>}</td>
-    <td><a href="__URL__/listclasstime/id/{<$course_info.course_id>}">显示</a>/      <a href="__URL__/publishclasstime/id/{<$course_info.course_id>}">添加</a></td>
-   <td class="edit">
-    <a href="__URL__/editCourse/id/{<$course_info.course_id>}">编辑</a>/
-    <a href="__URL__/deleteCourse/id/{<$course_info.course_id>}">删除</td>
-  </tr>
-  </volist>
-</table>
-<br>
-<gt name="displaypage" value="0">
-<div class="{<$pagestyle>}">{<$page>}</div>
-<else/>
-还没有发布课程
-</gt>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>浙江大学广播电视台内培系统——个人中心</title>
+        <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+        
+    </head>
+
+    <body id="index">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="file:///C:/Users/Fubuki%20C/Desktop/login&amp;main/main.html#" style="
+    width: 430px;
+">
+        <img alt="Brand" class="col-sm-2 col-xs-3" src="__PUBLIC__/logo2.jpg" style="
+    width: 55px;
+">  
+    浙江大学广播电视台内培选课个人中心
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+    <li><a>你好，学生{<$username>}，今天是{<$date>}</a></li>
+    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='__URL__/admin_exit':history.go(0)" class="btn btn-danger" style="
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+">退出登录</a></li>
+    </ul>
+   </div>
+   </nav>
+
+  <div class="container-fluid">
+    <div class="col-sm-3 col-xs-5">
+    <div class="list-group">
+  <a href="#" class="list-group-item active">菜单</a>
+  <a href="__URL__/selectedCourse" target="frameBord" class="list-group-item">已选课程</a>
+  <a href="__URL__/listCourse" target="frameBord" class="list-group-item">选择课程</a>
+  <a href="__URL__/publishCourse" target="frameBord" class="list-group-item">发布课程</a>
+  <a href="__URL__/manageCourse" target="frameBord" class="list-group-item">管理课程</a>
+  
+    </div>
+   </div>
+
+   <div class="col-sm-8 col-xs-7">  	 
+     <table class=" table table-striped table-bordered">
+     <tbody><tr><td style="text-align: center;">课程编号</td>
+         <td style="text-align: center;">课程名称</td>
+         <td style="text-align: center;">开课地点</td>
+         <td style="text-align: center;">上课人数</td>
+         <td style="text-align: center;">面向对象</td>
+         <td style="text-align: center;">开课日期</td>
+         <td style="text-align: center;">操作</td>
+      </tr>
+      <volist id="course_info" name="course_info">
+        <tr><td style="text-align: center;vertical-align: middle">{<$course_info.course_id>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$course_info.name>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$course_info.classroom>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$course_info.selectedman>}/{<$course_info.capacity>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$course_info.suita>}</td>
+            <td style="text-align: center;vertical-align: middle"><a href="__URL__/listclasstime/id/{<$course_info.course_id>}">显示</a>/<a href="__URL__/publishclasstime/id/{<$course_info.course_id>}">添加</a></td>
+            <td style="text-align: center;vertical-align: middle">
+            <a href="__URL__/editCourse/id/{<$course_info.course_id>}">编辑</a>/
+             <a href="__URL__/deleteCourse/id/{<$course_info.course_id>}">删除</td>
+          </tr>
+      </volist>    
+     </tbody></table>
+   </div>
+ </div>
+ </body>
+ </html>

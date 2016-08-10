@@ -1,53 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>管理界面</title>
-<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-     table{
-        width:900px;
-        margin:0px;
-        padding:0px;
-     }
-     td{
-       width:150px;
-       padding:0px;
-       margin:0px;
-       height:20px;
-       line-height:20px;
-       text-align:center;
-     }
-     td.credit{
-       width:50px;
-     }
-     input{
-        width:148px;
-        margin:0px;
-        padding:0px;
-        height:20px;
-        line-height:20px;
-        text-align:center;
-        font-size:14px;
-     }
-     input.publish{
-        width:96px;
-     }
-     select{
-        width:48px;
-        margin:0px;
-        padding:0px;
-        height:20px;
-        line-height:20px;
-     }
-     select.week{
-        width:63px;
-        float:left;
-     }
-     select.jie{
-        width:87px;
-     }
-</style>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>浙江大学广播电视台内培系统——选课页面</title>
+        <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+
 <script type="text/javascript">
      window.onload=function(){
           document.myform.no.focus();
@@ -68,6 +25,7 @@
           document.myform.name.focus();
           return false;
      }
+   
      if(document.myform.capacity.value==""){
           alert('总人数不能为空！！');
           document.myform.capacity.focus();
@@ -78,6 +36,7 @@
           document.myform.capacity.focus();
           return false;
      }
+
      if(document.myform.place.value==""){
           alert('上课教室不能为空！！');
           document.myform.place.focus();
@@ -85,21 +44,65 @@
      }
    }
 </script>
-</head>
-<body id="page">
-<h2>修改课程</h2>
-<form action="__URL__/updateclasstime/id/{<$time_info.course_id>}/date/{<$time_info.date>}/starttime/{<$time_info.starttime>}/" method="post" name="myform" onsubmit="return check();">
-<table>
-  <tr><th>上课日期</th>
-  <th>开始时间</th> 
-  <th>结束时间</th><th>操作</th></tr>
-  <tr>
-    <td><input type="text" name="date" value="{<$time_info.date>}"></td>
-    <td><input type="text" name="starttime" value="{<$time_info.starttime>}"></td>
-    <td><input type="text" name="endtime" value="{<$time_info.endtime>}"></td>
-   <td><input type="submit" name="submit" value="修改" class="publish"></td>
-  </tr>
-</table>
+    </head>
+
+    <body id="index">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="file:///C:/Users/Fubuki%20C/Desktop/login&amp;main/main.html#" style="
+    width: 430px;
+">
+        <img alt="Brand" class="col-sm-2 col-xs-3" src="__PUBLIC__/logo2.jpg" style="
+    width: 55px;
+">  
+    浙江大学广播电视台内培——修改课程
+    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+    </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+    <li><a>你好，学生{<$username>}，今天是{<$date>}</a></li>
+    <li><a href="__URL__/manageCourse"  class="btn btn-primary" style="
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+">回到首页</a></li>
+    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='__URL__/admin_exit':history.go(0)" class="btn btn-danger" style="
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+">退出登录</a>
+      </li>
+    </ul>
+   </div>
+   </nav>
+ 
+ <form class="form-horizontal" action="__URL__/updateclasstime/id/{<$time_info.course_id>}/date/{<$time_info.date>}/starttime/{<$time_info.starttime>}/" method="post" name="myform" onsubmit="return check();">
+  <div class="form-group">
+    <label class="col-sm-1 col-lg-1 control-label">上课日期</label>
+    <div class="col-sm-1 col-lg-3">
+    <input type="text" class="form-control" name="date" value="{<$time_info.date>}">
+  </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-1 col-lg-1 control-label">开始时间</label>
+    <div class="col-sm-1 col-lg-3">
+    <input type="text" class="form-control" name="starttime" value="{<$time_info.starttime>}">
+  </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-1 col-lg-1 control-label">结束时间</label>
+    <div class="col-sm-1 col-lg-3">
+    <input type="text" class="form-control" name="endtime" value="{<$time_info.endtime>}">
+  </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-1 col-sm-5">
+      <button type="submit" class="btn btn-primary">修改</button>
+      <input type="reset" class="btn btn-danger" value="恢复">
+    </div>
+  </div>
+
 </form>
-</body>
-</html>

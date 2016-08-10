@@ -1,107 +1,130 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>管理界面</title>
-<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-     table{
-        width:900px;
-        margin:0px;
-        padding:0px;
-     }
-     td{
-       width:150px;
-       padding:0px;
-       margin:0px;
-       height:20px;
-       line-height:20px;
-       text-align:center;
-     }
-     td.credit{
-       width:50px;
-     }
-     input{
-        width:148px;
-        margin:0px;
-        padding:0px;
-        height:20px;
-        line-height:20px;
-        text-align:center;
-        font-size:14px;
-     }
-     input.publish{
-        width:98px;
-     }
-     select{
-        width:48px;
-        margin:0px;
-        padding:0px;
-        height:20px;
-        line-height:20px;
-     }
-     select.week{
-        width:61px;
-        float:left;
-     }
-     select.jie{
-        width:87px;
-     }
-</style>
-<script type="text/javascript">
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>浙江大学广播电视台内培系统——个人中心</title>
+        <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+    <script type="text/javascript">
      window.onload=function(){
           document.myform.no.focus();
      }
-     function check(){
-     if(document.myform.no.value==""){
-          alert('课程编号不能为空！！');
-          document.myform.no.focus();
-          return false;
-     }
-     if(isNaN(document.myform.no.value)){
-          alert('课程编号必须为数字！！');
-          document.myform.no.focus();
-          return false;
-     }
-     if(document.myform.name.value==""){
-          alert('课程名不能为空！！');
-          document.myform.name.focus();
-          return false;
-     }
-   
-     if(document.myform.capacity.value==""){
-          alert('总人数不能为空！！');
-          document.myform.capacity.focus();
-          return false;
-     }
-     if(isNaN(document.myform.capacity.value)){
-          alert('总人数必须为数字！！');
-          document.myform.capacity.focus();
-          return false;
-     }
+       function check(){
+         if(document.myform.course_id.value==""){
+              alert('课程编号不能为空！！');
+              document.myform.no.focus();
+              return false;
+         }
+         if(isNaN(document.myform.course_id.value)){
+              alert('课程编号必须为数字！！');
+              document.myform.no.focus();
+              return false;
+         }
+         if(document.myform.name.value==""){
+              alert('课程名不能为空！！');
+              document.myform.name.focus();
+              return false;
+         }
+         if(document.myform.capacity.value==""){
+              alert('总人数不能为空！！');
+              document.myform.capacity.focus();
+              return false;
+         }
+         if(isNaN(document.myform.capacity.value)){
+              alert('总人数必须为数字！！');
+              document.myform.capacity.focus();
+              return false;
+         }
+         if(document.myform.place.value==""){
+              alert('上课教室不能为空！！');
+              document.myform.classroom.focus();
+              return false;
+         }
+      }
+    </script>    
+    </head>
 
-     if(document.myform.place.value==""){
-          alert('上课教室不能为空！！');
-          document.myform.place.focus();
-          return false;
-     }
-   }
-</script>
-</head>
-<body id="page">
-<h2>发布课程</h2>
-<form action="__URL__/addCourse" method="post" name="myform" onsubmit="return check();">
-<table>
-  <tr><th>课题编号</th><th>课题名</th><th>总人数</th><th>上课教室</th><th>适用对象</th><th>操作</th></tr>
-  <tr>
-    <td><input type="text" name="course_id"></td>
-    <td><input type="text" name="name"></td>
-    <td><input type="text" name="capacity"></td>
-    <td><input type="text" name="classroom"></td>
-    <td><input type="text" name="suit"></td>
-   <td><input type="submit" name="submit" value="发布" class="publish"></td>
-  </tr>
-</table>
-</form>
-</body>
-</html>
+    <body id="index">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="file:///C:/Users/Fubuki%20C/Desktop/login&amp;main/main.html#" style="
+    width: 430px;
+">
+        <img alt="Brand" class="col-sm-2 col-xs-3" src="__PUBLIC__/logo2.jpg" style="
+    width: 55px;
+">  
+    浙江大学广播电视台内培选课个人中心
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+    <li><a>你好，学生{<$username>}，今天是{<$date>}</a></li>
+    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='__URL__/admin_exit':history.go(0)" class="btn btn-danger" style="
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+">退出登录</a></li>
+    </ul>
+   </div>
+   </nav>
+
+  <div class="container-fluid">
+    <div class="col-sm-3 col-xs-5">
+    <div class="list-group">
+  <a href="#" class="list-group-item active">菜单</a>
+  <a href="__URL__/selectedCourse" target="frameBord" class="list-group-item">已选课程</a>
+  <a href="__URL__/listCourse" target="frameBord" class="list-group-item">选择课程</a>
+  <a href="__URL__/publishCourse" target="frameBord" class="list-group-item">发布课程</a>
+  <a href="__URL__/manageCourse" target="frameBord" class="list-group-item">管理课程</a>
+  
+    </div>
+   </div>
+
+   <div class="col-sm-8 col-xs-7">
+    <form class="form-horizontal" action="__URL__/addCourse" method="post" name="myform" onsubmit="return check();">
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">课程编号</label>
+        <div  class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="course_id" >
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">课程名称</label>
+        <div class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="name">
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">总人数</label>
+        <div class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="capacity">
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">上课教室</label>
+        <div class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="classroom">
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">适用对象</label>
+        <div class="col-sm-3 col-lg-3">
+        <select class="form-control">
+           <option value="0">记者主持</option>
+           <option value="1">摄影剪辑</option>
+           <option value="2">网维组</option>
+        </select>
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-5">
+          <input type="submit" class="btn btn-primary" name="submit" value="发布" class="publish">
+          <input type="reset" class="btn btn-danger" value="清除">
+        </div>
+      </div>
+    </form>
+   </div>
+ </div>
+ </body>
+ </html>

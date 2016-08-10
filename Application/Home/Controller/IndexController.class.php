@@ -29,17 +29,7 @@ class IndexController extends Controller {
     	}
 
     	$type=$us['authority'];
-    	switch ($type) {
-    		case 'S':
-    			$url=U("student");
-    			break;
-    		case 'T':
-    			$url=U("teacher");
-    			break;
-    		case 'A':
-    			$url=U("admin");
-    			break;
-    	}
+      $url=U("selectedCourse");
 
     	$_SESSION['user_id']=$_POST['userid'];
     	$this->assign("jumpUrl",$url);
@@ -59,6 +49,14 @@ class IndexController extends Controller {
     	}
     }
 
+    function check_authority(){
+      $user=M('User');
+      $condition['user_id']=$_SESSION['user_id'];
+      $us=$user->where($condition)->find();
+      if ($us['authority']=='S')
+        $this->error('无权限访问');
+    }
+
     function admin_exit(){
     	unset($_SESSION['user_id']);
     	$url=U("login");
@@ -66,7 +64,7 @@ class IndexController extends Controller {
     	$this->success("退出成功");
     }
 
-    function student(){		//学生管理首页
+    /*function student(){		//学生管理首页
     	$this->check_logined();
     	session_start();
     	$user=M('User');
@@ -81,7 +79,7 @@ class IndexController extends Controller {
     function student_page(){	//学生管理首页信息
     	$this->check_logined();
     	$this->display();
-    }
+    }*/
 
     function listCourse(){  //课程列表
     	$this->check_logined();
@@ -90,7 +88,22 @@ class IndexController extends Controller {
     	$listRow=10;
 
       $course_info=$course->join('info_User on info_course.teacher = info_user.user_id')->select();
-
+     
+      for ($i=0;$i<count($course_info);$i++)
+      {
+        switch ($course_info[$i]['suit']) {
+        case 0:
+          $course_info[$i]['suita']='记者主持';
+          break;
+        case 1:
+          $course_info[$i]['suita']='摄影剪辑';
+          break;
+        case 2:
+          $course_info[$i]['suita']='网维组';
+          break;
+        }
+      }
+      
       //dump($course_info);
       $this->assign("course_info",$course_info);
     	$this->display();
@@ -177,6 +190,21 @@ class IndexController extends Controller {
 
         $course_info=$selected->where("info_user.user_id=".$_SESSION["user_id"])->join('info_Course on info_selected.course_id = info_course.course_id')->join('info_User on info_course.teacher = info_user.user_id')->select();
         //dump($course_info);
+        for ($i=0;$i<count($course_info);$i++)
+        {
+          switch ($course_info[$i]['suit']) {
+          case 0:
+            $course_info[$i]['suita']='记者主持';
+            break;
+          case 1:
+            $course_info[$i]['suita']='摄影剪辑';
+            break;
+          case 2:
+            $course_info[$i]['suita']='网维组';
+            break;
+          }
+        }
+
         $export=0;
         if (count($course_info)>0)
           $export=1;
@@ -202,6 +230,7 @@ class IndexController extends Controller {
     function publishCourse()
     {
       $this->check_logined();//发布课程模块
+      $this->check_authority();
       $this->display();
     }
 
@@ -211,28 +240,45 @@ class IndexController extends Controller {
       session_start();
       $course=M("course");
       $user=M("user");
-      dump($course->create());
+      $course_id=$_POST['course_id'];
+      //dump($course->create());
       if (!$data=$course->create())
-        $this->error();
-      $data['teacherid']=$_SESSION['user_id'];
-      $condition['user_id']=$_SESSION['user_id'];
-      $teacher=$user->where($condition)->find();
-      dump($teacher);
-      $data['teacher']=$teacher['username'];
+        $this->error("create失败");   
+      $data['teacher']=$_SESSION['user_id'];
+      $data['selectedMan']=0;
       if (!$course->add($data))
         $this->error("发布失败");
       $url=U("publishCourse");
       $this->assign("jumpUrl",$url);
-      $this->success("发布成功");      
+      $this->success("发布成功");     
     }
 
     function manageCourse()//管理课程，尚未添加时间冲突
     {
       $this->check_logined();
       session_start();
+
+      $this->check_authority();
+
       $course=M("course");
       $condition['teacherid']=$_SESSION['user_id'];
       $course_info=$course->where($condition)->select();
+
+      for ($i=0;$i<count($course_info);$i++)
+      {
+        switch ($course_info[$i]['suit']) {
+        case 0:
+          $course_info[$i]['suita']='记者主持';
+           break;
+        case 1:
+          $course_info[$i]['suita']='摄影剪辑';
+          break;
+        case 2:
+          $course_info[$i]['suita']='网维组';
+          break;
+        }
+      }
+
       $displaypage=0;
       if (count($course_info)>0)//如果有课程信息才显示分页
         $displaypage=1;
@@ -311,12 +357,12 @@ class IndexController extends Controller {
         $starttime=strtotime($starttime.' '.$date);
         $condition['course_id']=$id;
         $condition['startTime']=$starttime;
+        dump($condition);
         
         $time_info=M("classtime");
 
         if (!$time_info->where($condition)->delete())
           $this->error("删除失败");
-        
         $url=U("manageCourse");
         $this->assign("jumpUrl",$url);
         $this->success("删除成功");   
@@ -337,7 +383,7 @@ class IndexController extends Controller {
     function updateclasstime()
     {
         $this->check_logined();
-        echo "</br></br></br></br></br>";
+        //echo "</br></br></br></br></br>";
         $date=$_POST['date'];
         $starttime=$_POST['starttime'];
         $endtime=$_POST['endtime'];
@@ -349,8 +395,8 @@ class IndexController extends Controller {
         $condition['course_id']=$_GET['id'];
         $condition['starttime']=strtotime($starttime.' '.$date);
         
-        //dump($data);
-        //dump($condition);
+        dump($data);
+        dump($condition);
         $time_info=M("classtime");
 
         $Model = new \Think\Model();
@@ -404,6 +450,7 @@ class IndexController extends Controller {
         $time_info[$i]["endtime"]=date("h:i:s",$time_info[$i]["endtime"]);        
       }
       
+      //dump($time_info);
       $this->assign("time_info",$time_info);
       $this->display();
     }

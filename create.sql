@@ -9,7 +9,7 @@ create table info_user
 	account varchar(20),
 	username varchar(20),
 	password varchar(255),
-	job tinyint,
+	job int,
 	authority enum('S','T','A'),
     primary key (user_id)
 )DEFAULT CHARSET=utf8;
@@ -20,7 +20,7 @@ create table info_course
 	course_id int not null auto_increment,
 	name varchar(20),
     classroom varchar(20),
-    suit  enum('S','T','A'),
+    suit  int,
     capacity int,
     selectedMan int,
     teacher int,
