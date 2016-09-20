@@ -9,16 +9,6 @@
           document.myform.no.focus();
      }
        function check(){
-         if(document.myform.course_id.value==""){
-              alert('课程编号不能为空！！');
-              document.myform.no.focus();
-              return false;
-         }
-         if(isNaN(document.myform.course_id.value)){
-              alert('课程编号必须为数字！！');
-              document.myform.no.focus();
-              return false;
-         }
          if(document.myform.name.value==""){
               alert('课程名不能为空！！');
               document.myform.name.focus();
@@ -39,6 +29,7 @@
               document.myform.classroom.focus();
               return false;
          }
+         myform.submit();
       }
     </script>    
     </head>
@@ -82,13 +73,7 @@
    </div>
 
    <div class="col-sm-8 col-xs-7">
-    <form class="form-horizontal" action="/eduadmin/index.php/Home/Index/addCourse" method="post" name="myform" onsubmit="return check();">
-      <div class="form-group">
-        <label class="col-sm-1 col-lg-2 control-label">课程编号</label>
-        <div  class="col-sm-3 col-lg-3">
-        <input type="text" class="form-control" name="course_id" >
-      </div>
-      </div>
+    <form class="form-horizontal" action="/eduadmin/index.php/Home/Index/addCourse" method="post" name="myform" >
       <div class="form-group">
         <label class="col-sm-1 col-lg-2 control-label">课程名称</label>
         <div class="col-sm-3 col-lg-3">
@@ -119,7 +104,7 @@
       </div>
       <div class="form-group">
         <div class="col-sm-offset-1 col-sm-5">
-          <input type="submit" class="btn btn-primary" name="submit" value="发布" class="publish">
+          <input type="submit" class="btn btn-primary" name="submit" value="发布" class="publish" onclick="check()">
           <input type="reset" class="btn btn-danger" value="清除">
         </div>
       </div>

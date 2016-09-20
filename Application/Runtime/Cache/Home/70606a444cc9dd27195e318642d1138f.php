@@ -81,12 +81,6 @@
  
  <form class="form-horizontal" action="/eduadmin/index.php/Home/Index/updateCourse/id/<?php echo ($course_info["course_id"]); ?>" method="post" name="myform" onsubmit="return check();">
   <div class="form-group">
-    <label class="col-sm-1 col-lg-1 control-label">课程编号</label>
-    <div class="col-sm-1 col-lg-3">
-    <input type="text" class="form-control" name="course_id" value="<?php echo ($course_info["course_id"]); ?>"> 
-  </div>
-  </div>
-  <div class="form-group">
     <label class="col-sm-1 col-lg-1 control-label">课程名称</label>
     <div class="col-sm-1 col-lg-3">
     <input type="text" class="form-control" name="name"  value="<?php echo ($course_info["name"]); ?>">
@@ -110,7 +104,7 @@
     <select class="form-control">
        <option value="0">记者主持</option>
        <option value="1">摄影剪辑</option>
-        <option value="2">网维组</option>
+       <option value="2">网维组</option>
     </select>
     </div>
   </div>

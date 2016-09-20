@@ -34,8 +34,10 @@ create table info_selected
 	user_id int,
     course_id int,
     primary key(user_id,course_id),
-    foreign key (user_id) references info_user(user_id),
+    foreign key (user_id) references info_user(user_id)
+        on delete cascade on update cascade,
     foreign key (course_id) references info_course(course_id)
+        on delete cascade on update cascade,
 )DEFAULT CHARSET=utf8;
 
 drop table if exists info_classtime;
@@ -46,6 +48,7 @@ create table info_classtime
     endTime int,
     primary key(course_id,startTime),
     foreign key (course_id) references info_course(course_id)
+        on delete cascade on update cascade,
 )DEFAULT CHARSET=utf8;
 
 

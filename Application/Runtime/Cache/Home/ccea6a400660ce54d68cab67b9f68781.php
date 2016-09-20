@@ -61,7 +61,7 @@
                       <input type="password" name="password" placeholder="请输入密码" class="form-password form-control" id="form-password" style="height: 50px">
                       </div>
                       </div>                      
-                      <div class="form-group">
+                      <!--<div class="form-group">
                          <div class="col-sm-offset-3 col-xs-offset-5">
                              <div class="checkbox">
                                <label>
@@ -69,7 +69,7 @@
                                </label>
                           </div>
                         </div>
-                      </div>
+                      </div>-->
                        <div class="form-group">
                         <div class="col-xs-offset-3">
                            <button class="btn btn-primary btn-lg" type="submit" >登录</button>

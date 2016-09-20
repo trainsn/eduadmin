@@ -13,27 +13,64 @@ class IndexController extends Controller {
     function login(){//登录模块
     	$this->display();
     }
+
     function check_login(){	//判断登录是否成功
     	session_start();
-    	$user=M('User');
-    	$condition['user_id']=$_POST['userid'];
-    	$us=$user->where($condition)->find();
-
-    	if (!$us)
-    	{
-    		$this->error("没有此用户");
-    	}
-    	if ($us['password']!=($_POST['password']))
-    	{
-    		$this->error("密码错误");
-    	}
-
     	$type=$us['authority'];
-      $url=U("selectedCourse");
+      $api='https://api.zjubtv.com/Passport/userLogin?identity='. $_POST['userid'].'&password='. $_POST['password'];
 
-    	$_SESSION['user_id']=$_POST['userid'];
-    	$this->assign("jumpUrl",$url);
-    	$this->success("登录成功");
+      $c=curl_init($api);
+      curl_setopt($c, CURLOPT_URL, $api);
+      curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+
+      curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);
+      curl_setopt($c, CURLOPT_SSL_VERIFYHOST, false);
+      $return = curl_exec($c);
+      $var=json_decode($return);
+      curl_close($c);
+
+      dump($var[0]);
+      //if (is_object($var))
+      {
+        $uid=(int)$var[0];
+        if ($uid==-1)
+        {
+          $this->error('登录失败:用户不存在，或被删除');
+        }
+        else if ($uid==-2)
+        {
+          $this->error('登录失败：密码错误');
+        } 
+        else if ($uid>0)
+        {
+          $url=U("selectedCourse");
+          $_SESSION['user_id']=$uid;
+          $this->assign("jumpUrl",$url);
+          $this->success("登录成功");
+
+          $user=M('User');
+          $condition['user_id']=$uid;
+          $us=$user->where($condition)->find();
+
+          if (!$us)
+          {
+            $data['user_id']=$uid;
+            $data['account']=$_POST['userid'];
+            $data['username']=$_POST['userid'];
+            $data['authority']='S';
+            $data['password']=$_POST['password'];
+            $user->add($data);
+          }
+          if ($us['password']!=($_POST['password']))
+          {
+            $this->error("密码错误");
+          }
+        }
+        else 
+        {
+           $this->error('登录失败：未知错误');
+        }
+      }      
     }
 
     function check_logined(){	//检测是否已经登录
@@ -64,23 +101,6 @@ class IndexController extends Controller {
     	$this->success("退出成功");
     }
 
-    /*function student(){		//学生管理首页
-    	$this->check_logined();
-    	session_start();
-    	$user=M('User');
-    	$condition['user_id']=$_SESSION['user_id'];
-    	$us=$user->where($conditon)->find();
-    	$username=$us['name'];
-    	$date=date("Y年m月d日",time());
-    	$this->assign('username',$username);
-    	$this->display();
-    }
-
-    function student_page(){	//学生管理首页信息
-    	$this->check_logined();
-    	$this->display();
-    }*/
-
     function listCourse(){  //课程列表
     	$this->check_logined();
     	$course=M("Course");
@@ -110,7 +130,6 @@ class IndexController extends Controller {
     }
 
    	function selectCourse(){	//选课操作
-      //echo "</br></br></br></br>";
    		$this->check_logined();
    		session_start();
    		$id=$_GET['id'];
@@ -240,7 +259,19 @@ class IndexController extends Controller {
       session_start();
       $course=M("course");
       $user=M("user");
-      $course_id=$_POST['course_id'];
+      
+      $name=$_POST['name'];
+      $capacity=$_POST['capacity'];
+      $classroom=$_POST['classroom'];
+      if (empty($name))
+        $this->error("课程名称不能为空");
+      if (empty($capacity))
+        $this->error("课程容量不能为空");
+      if (is_numeric($capacity)==false)
+        $this->error("课程容量必须为数字");
+      if (empty($classroom))
+        $this->error("教室不能为空");
+
       //dump($course->create());
       if (!$data=$course->create())
         $this->error("create失败");   
@@ -314,12 +345,23 @@ class IndexController extends Controller {
 
     function updatecourse() 
     {
-      echo "</br></br></br></br>";
       $this->check_logined();
       session_start();
       $course=M("course");
       $user=M("user");
       //dump($_GET['id']);
+      $name=$_POST['name'];
+      $capacity=$_POST['capacity'];
+      $classroom=$_POST['classroom'];
+      if (empty($name))
+        $this->error("课程名称不能为空");
+      if (empty($capacity))
+        $this->error("课程容量不能为空");
+      if (is_numeric($capacity)==false)
+        $this->error("课程容量必须为数字");
+      if (empty($classroom))
+        $this->error("教室不能为空");
+
       if (!$data=$course->create())
         $this->error();
       $data['teacherid']=$_SESSION['user_id'];
@@ -330,7 +372,6 @@ class IndexController extends Controller {
 
     function listclasstime()
     {
-      //echo "</br></br></br></br>";
       $this->check_logined();
       session_start();
       $classtime=M("classtime");
@@ -350,7 +391,6 @@ class IndexController extends Controller {
     function deleteclasstime()
     {
         $this->check_logined();
-        //echo "</br></br></br></br></br>";
         $id=$_GET['id'];
         $date=$_GET['date'];
         $starttime=$_GET['starttime'];
@@ -387,6 +427,12 @@ class IndexController extends Controller {
         $date=$_POST['date'];
         $starttime=$_POST['starttime'];
         $endtime=$_POST['endtime'];
+        if(empty($date))
+          $this->error("日期不能为空");
+        if (empty($starttime))
+          $this->error("开始日期不能为空");
+        if (empty($endtime))
+          $this->error("结束日期不能为空");
         $data['starttime']=strtotime($starttime.' '.$date);
         $data['endtime']=strtotime($endtime.' '.$date);
 
@@ -418,11 +464,17 @@ class IndexController extends Controller {
     function addclasstime()
     {
         $this->check_logined();
-        echo "</br></br></br></br></br>";
         $data['course_id']=$_GET['id'];
         $date=$_POST['date'];
         $starttime=$_POST['starttime'];
         $endtime=$_POST['endtime'];
+        if(empty($date))
+          $this->error("日期不能为空");
+        if (empty($starttime))
+          $this->error("开始日期不能为空");
+        if (empty($endtime))
+          $this->error("结束日期不能为空");
+
         $data['startTime']=strtotime($starttime.' '.$date);
         $data['endTime']=strtotime($endtime.' '.$date);
         dump($data);
@@ -437,7 +489,6 @@ class IndexController extends Controller {
 
     function stulistclasstime()
     {
-      //echo "</br></br></br></br>";
       $this->check_logined();
       session_start();
       $classtime=M("classtime");
@@ -450,7 +501,6 @@ class IndexController extends Controller {
         $time_info[$i]["endtime"]=date("h:i:s",$time_info[$i]["endtime"]);        
       }
       
-      //dump($time_info);
       $this->assign("time_info",$time_info);
       $this->display();
     }

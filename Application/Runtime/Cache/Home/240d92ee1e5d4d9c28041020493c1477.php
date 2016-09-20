@@ -10,16 +10,6 @@
           document.myform.no.focus();
      }
      function check(){
-     if(document.myform.no.value==""){
-          alert('课程编号不能为空！！');
-          document.myform.no.focus();
-          return false;
-     }
-     if(isNaN(document.myform.no.value)){
-          alert('课程编号必须为数字！！');
-          document.myform.no.focus();
-          return false;
-     }
      if(document.myform.name.value==""){
           alert('课程名不能为空！！');
           document.myform.name.focus();
@@ -79,7 +69,7 @@
    </div>
    </nav>
  
- <form class="form-horizontal" action="/eduadmin/index.php/Home/Index/updateclasstime/id/<?php echo ($time_info["course_id"]); ?>/date/<?php echo ($time_info["date"]); ?>/starttime/<?php echo ($time_info["starttime"]); ?>/" method="post" name="myform" onsubmit="return check();">
+ <form class="form-horizontal" action="/eduadmin/index.php/Home/Index/addclasstime/id/<?php echo ($course_id); ?>/" method="post" name="myform" onsubmit="return check();">
   <div class="form-group">
     <label class="col-sm-1 col-lg-1 control-label">上课日期</label>
     <div class="col-sm-1 col-lg-3">

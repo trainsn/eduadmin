@@ -23,6 +23,12 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
     <li><a>你好，学生<?php echo ($username); ?>，今天是<?php echo ($date); ?></a></li>
+    <li><a href="/eduadmin/index.php/Home/Index/manageCourse"  class="btn btn-primary" style="
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+">回到首页</a></li>
     <li><a href="javascript:ms=confirm('确定退出');ms?location.href='/eduadmin/index.php/Home/Index/admin_exit':history.go(0)" class="btn btn-danger" style="
     margin-top: 6px;
     margin-left: 6px;
