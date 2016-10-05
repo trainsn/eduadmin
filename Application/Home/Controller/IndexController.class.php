@@ -61,6 +61,11 @@ class IndexController extends Controller {
             $data['password']=$_POST['password'];
             $user->add($data);
           }
+          else 
+          {
+            $update['password']=$_POST['password'];
+            $user->where($condition)->save($update);
+          }
           if ($us['password']!=($_POST['password']))
           {
             $this->error("密码错误");

@@ -95,7 +95,7 @@
       <div class="form-group">
         <label class="col-sm-1 col-lg-2 control-label">适用对象</label>
         <div class="col-sm-3 col-lg-3">
-        <select class="form-control">
+        <select class="form-control" name='suit'>
            <option value="0">记者主持</option>
            <option value="1">摄影剪辑</option>
            <option value="2">网维组</option>
